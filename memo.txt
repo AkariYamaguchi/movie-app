@@ -1,0 +1,16 @@
+ディレクトリ構成
+/moive-app/src/assets 画像をいれる
+/moive-app/src/components　部品設計(コンポネント思考。部分の集まりで一つのサイトページがある。)
+/Users/akaringo/moive-app/.babelrc バベル（vueの中の設定）
+/Users/akaringo/moive-app/package.json npmで経由でダウンロードしたもの
+/Users/akaringo/moive-app/yarn.lock　これも設定（yarm経由でインストールしたものrails でgem）
+/Users/akaringo/moive-app/node_modules 基本的に触らない。デフォで入っているが、gitに同期されない。
+
+ホットリロード　その場に反映される。（デフォ）
+mounted ページが読みこれた後（直後）に読み込まれるもの。ライフサイクルの一つ。
+
+<<まとめ>>
+axiodを使ってAPI連携。
+getメソッドでデータ取得。(console.logで確認。)
+v-forを使って、データが必要な箇所にいれる。
+　└参考：https://jp.vuejs.org/v2/guide/list.html
