@@ -3,14 +3,14 @@
     <h1>Movie app</h1>
     <div class='container'>
         <Results title='this is movies..'/>
-        <li v-for="(movie, index) in movies" :key="index">
+        <div v-for="(movie, index) in movies" :key="index">
         <div class='wrapper_style'>
             <div class="flex">
                 <div class='title_style'><h1 class='title'>{{ movie.Title }}</h1></div>
                 <div class='img_style'><img class='img' :src="movie.Poster "/></div>
             </div>
         </div>
-        </li>
+        </div>
     </div>
 </div>
 </template>
@@ -36,7 +36,7 @@ export default {
             console.log(self.movies);
         })
     },
-    
+
 }
 </script>
 
