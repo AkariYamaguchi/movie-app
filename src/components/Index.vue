@@ -2,7 +2,7 @@
 <div>
   <h1>Movie app</h1>
   <div class='container'>
-    <Results title='this is movies..'/>
+    <Results />
     <div v-for="(movie, index) in movies" :key="index">
       <div class='wrapper_style'>
         <div class="flex">
