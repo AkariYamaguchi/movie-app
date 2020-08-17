@@ -1,5 +1,7 @@
 <template>
-    <h1>これはテスト</h1>
+  <div class="container">
+      <h1>{{movie_list}}</h1>
+  </div>
 </template>
 
 <script>
@@ -15,8 +17,8 @@ export default {
     mounted(){
       var self = this;
       axios.get(apiurl).then(function(res) {
-      self.movies_list = res.data.Search;
-      console.log(self.movies_list);
+      self.movie_list = res.data.Search;
+      console.log(self.movie_list);
     })
     }
 }
